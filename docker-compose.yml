@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  golem-cuda-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./cuda-samples:/cuda-samples
+    working_dir: /cuda-samples
+    command: make
