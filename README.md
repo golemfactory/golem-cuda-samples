@@ -1,5 +1,7 @@
 # golem-cuda-samples
-Sample how to compile and run cuda samples on Golem
+Sample how to compile and run cuda samples on Golem. It can be a starting point
+for more complex computations on Golem GPU nodes. All samples are build from scratch
+and you can modify them to fit your needs.
 
 ## Prerequisites
 
@@ -23,3 +25,23 @@ Make sure you have polygon GLM and MATIC on your yagna account
 npm install
 npm run golem-cuda-bandwidth
 ```
+
+This example uses golem-js, for more information see
+
+https://github.com/golemfactory/golem-js
+
+This example is using image from golem image repository
+
+https://registry.golem.network/explore/nvidia/cuda
+
+tag: 12.6.0-cudnn-runtime-ubuntu24.04
+
+The image is build using dockerfile from runtime folder
+
+## Obtaining GLM tokens
+
+To obtain Golem tokens on polygon network you can top up your account manually or use Golem service:
+
+https://glm.golem.network/
+
+Default allocation is for 10GLMs, but you can modify this in golem-cuda-bandwidth.js
