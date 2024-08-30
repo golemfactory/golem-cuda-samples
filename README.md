@@ -5,7 +5,12 @@ and you can modify them to fit your needs.
 
 ## Prerequisites
 
-docker installed
+Docker (with compose) installed.
+
+Repo was tested to work on Linux (Ubuntu) and Windows.
+When running on macOS make sure to use x86 version of docker images.
+On Linux you can build natively without using docker, but you have
+to install cuda toolkit and all necessary tools on your machine.
 
 ## Build binaries using nvidia/cuda image
 
