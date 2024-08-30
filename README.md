@@ -17,6 +17,10 @@ Binaries are located in ./cuda-samples/bin/x86_64/linux/release
 
 You can run binaries locally if you have nvidia driver installed
 
+## Nvidia samples
+
+Samples are copied from repo https://github.com/NVIDIA/cuda-samples
+
 ## Run example 
 
 Make sure you have polygon GLM and MATIC on your yagna account

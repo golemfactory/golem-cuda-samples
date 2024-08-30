@@ -48,10 +48,13 @@ import { pinoPrettyLogger } from "@golem-sdk/pino-logger";
         await glm.connect();
         const rental = await glm.oneOf({ order });
         const exe = await rental.getExeUnit();
-        await exe.uploadFile("./cuda-samples/bin/x86_64/linux/release/bandwidthTest", "/storage/bandwithTest");
-        await exe.run('chmod +x /storage/bandwithTest')
-        await exe.run('/storage/bandwithTest')
-            .then((res) => console.log(res));
+        await exe.uploadFile("./cuda-samples/bin/x86_64/linux/release/bandwidthTest", "/storage/bandwidthTest");
+        await exe.run('chmod +x /storage/bandwidthTest')
+        await exe.run('/storage/bandwidthTest')
+            .then((res) => {
+
+                console.log(res)
+            });
 
         await rental.stopAndFinalize();
     } catch (err) {
