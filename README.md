@@ -45,3 +45,16 @@ To obtain Golem tokens on polygon network you can top up your account manually o
 https://glm.golem.network/
 
 Default allocation is for 10GLMs, but you can modify this in golem-cuda-bandwidth.js
+
+
+## Cleaning build
+
+You can clean all build files using 
+
+```bash
+cd cuda-samples && git ls-files --ignored --exclude-standard -o | xargs rm
+```
+or
+```bash
+cd cuda-samples && git clean -fdx
+```
